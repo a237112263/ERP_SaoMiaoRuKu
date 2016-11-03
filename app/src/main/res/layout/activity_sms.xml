@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_sms"
+    android:id="@+id/conteaner"
+    android:gravity="center_vertical"
+    >
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:id="@+id/regist_bnLogin1"
+            android:layout_width="100dp"
+            android:layout_height="40.0dip"
+            style="@style/text_flag_03"
+            android:singleLine="true"
+            android:text="+86"
+            android:textColor="#509de2"
+            android:textSize="20.0sp" />
+        <EditText
+            android:gravity="center"
+            android:textColorHint="#509de2"
+            android:id="@+id/et_sms1"
+            android:inputType="number"
+            android:text=""
+            android:layout_gravity="center"
+            android:textColor="#252222"
+            android:textSize="20dp"
+            android:hint="请输入手机号"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search_edittext_shape"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:gravity="center"
+            android:textColorHint="#2094dd"
+            android:id="@+id/et_sms2"
+            android:inputType="number"
+            android:text=""
+            android:textColor="#252222"
+            android:textSize="20dp"
+            android:hint="验证码"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/search_edittext_shape"
+            android:layout_width="100dp"
+            android:layout_height="40.0dip" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:textSize="15dp"
+                android:text="1111"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/bt_sms3"
+                android:textColor="#ffffff"
+                style="@style/text_flag_04"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip" />
+            <Button
+                android:textSize="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/bt_sms1"
+                android:textColor="#ffffff"
+                android:text="获取验证码"
+                style="@style/text_flag_02"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <Button
+        android:textSize="15dp"
+        android:id="@+id/bt_sms2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="登录"
+        style="@style/text_flag_02"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip" />
+</LinearLayout>

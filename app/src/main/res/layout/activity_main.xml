@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.keyi.erp_saomiaoruku.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#519ee2"
+            android:gravity="center"
+            android:text="打印未审核入库单号"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_main1"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/ic_keyboard_arrow_left_24dp" />
+
+        <TextView
+            android:id="@+id/tv_shuaxin"
+            android:text="刷新"
+            android:background="#fff"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/tv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="没有入库单"
+        android:textSize="20dp"
+        android:textColor="#000"
+        />
+</LinearLayout>
